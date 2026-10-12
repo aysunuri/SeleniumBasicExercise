@@ -15,17 +15,17 @@ pipeline{
             parallel{
                 stage("Project 1 Tests"){
                     steps{
-                        bat 'dotnet test TestProject1/TestProject1.csproj --no-build --verosity normal'
+                        bat 'dotnet test TestProject1/TestProject1.csproj --no-build --verbosity normal'
                     }
                 }
                 stage("Project 2 Tests"){
                     steps{
-                        bat 'dotnet test TestProject2/TestProject2.csproj --no-build --verosity normal'
+                        bat 'dotnet test TestProject2/TestProject2.csproj --no-build --verbosity normal'
                     }
                 }
                 stage ("Project 3 Tests"){
                     steps{
-                        bat 'dotnet test TestProject3/TestProject3.csproj --no-build --verosity normal'
+                        bat 'dotnet test TestProject3/TestProject3.csproj --no-build --verbosity normal'
                     }
                 }
             }
